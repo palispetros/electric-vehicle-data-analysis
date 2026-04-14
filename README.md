@@ -56,11 +56,13 @@ The dataset includes:
 4. Run the main script: source("ev_data_analysis.r")
 
 ## Project Structure
+```
 ev-data-analysis/
 ├── ev_data_analysis.r    # Main analysis pipeline
 ├── ev_dataset.xlsx       # Dataset
 ├── plots/                # Generated visualizations
 └── README.md
+```
 
 ## Author
 Petros Palis
