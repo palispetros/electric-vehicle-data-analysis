@@ -64,4 +64,3 @@ ev-data-analysis/
 
 ## Author
 Petros Palis
-Master Thesis/Data science Project
