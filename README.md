@@ -9,33 +9,15 @@ The dataset includes:
 - Socioeconomic indicators (GDP per capita, urbanization, political stability index)
 - Policy indicators (EV-related incentives)
 
-## Methods
-### 1. Data Preprocessing
-- Normalization per 100,000 inhabitants
-- Missing values imputation using missRanger
-- Feature filtering and transformation
-- Wide-format reshaping for time-series analysis
-### 2. Exploratory Data Analysis
-- Correlation analysis between EV adoption and explanatory variables
-- Temporal trend visualization (2020–2024)
-- Policy score construction from regulatory indicators
-- Distribution and relationship analysis via scatterplots and heatmaps
-### 3. Clustering Analysis
-- Multiple clustering approaches were applied for robustness:
-- Hierarchical clustering (Gower distance + Ward linkage)
-- PAM clustering (medoid-based, robust to mixed data)
-- K-means clustering (Euclidean space on scaled features)
-- Gaussian Mixture Models (mclust) (probabilistic clustering)
-- DBSCAN (density-based structure detection)
-- PCA + PAM clustering (dimensionality-reduced space)
-### 4. Evaluation
-- Silhouette analysis for cluster validity
-- Elbow method for optimal k selection
-- NbClust multi-index validation
-- Comparative cluster stability across methods
+## Methods Overview
+- Data preprocessing (normalization, imputation, feature engineering)
+- Exploratory data analysis (correlation and trend analysis)
+- Clustering analysis (hierarchical, k-means, PAM, GMM, DBSCAN)
+- Dimensionality reduction (PCA)
+- Cluster validation (silhouette, elbow method, NbClust)
 
 ## Technologies
-- **R**
+The project is implemented in R using the following libraries:
 - dplyr, tidyr (data manipulation)
 - ggplot2 (visualization)
 - cluster, factoextra (clustering & evaluation)
